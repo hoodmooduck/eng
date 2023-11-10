@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Результат поиска</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <a class="link" href="http://localhost:3000/">Назад</a>
+    <div id="result" class="lobster">
+      <%= result == '' ? 'Ничего не нашёл держи калывана' : result %>
+      <img style='display: <%= result == ''? 'block' : 'none'%>;' src=<%= result == '' ?  "/img/kalvan.png" : ''  %> alt="">
+      
+    </div>
+  </div>
+
+</body>
+</html>
