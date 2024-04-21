@@ -8,15 +8,19 @@
 </head>
 <body>
   <div class="wrapper">
-    <h1 class="head lobster">Переводчик 1.0</h1>
+    <h1 class="head lobster">Переводчик 2.0</h1>
     <form action="/search" method="post">
       <div>
         <label class="text-field__label" for="inp">Введите слово</label>
-        <input class="text-field__input" type="text" id="inp" name="word" >
+        <input style="margin-bottom: 20px" class="text-field__input" type="text" id="inp" name="word" >
+        <label for="opt"  >выберита на какой язык перевести</label>
+        <select name="opt" id="opt">
+          <option id="ru" value="ru">ru</option>
+          <option id="en" value="en">en</option>
+        </select>
       </div>
       <button class="translate" type="submit"><img src="/img/search.png" alt=""></button>
     </form>
   </div>
-
 </body>
 </html>

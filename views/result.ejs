@@ -10,9 +10,11 @@
   <div class="wrapper">
     <a class="link" href="http://localhost:3000/">Назад</a>
     <div id="result" class="lobster">
-      <%= result == '' ? 'Ничего не нашёл держи калывана' : result %>
+      <%= result == '' ? 'Ничего не нашёл в словаре держи калывана' : result %>
+      <br>
       <img style='display: <%= result == ''? 'block' : 'none'%>;' src=<%= result == '' ?  "/img/kalvan.png" : ''  %> alt="">
-      
+      <br>
+      <p>согласно переводчику гугле ->&nbsp;<%= result2 == '' ? 'Переводчик молчит наверное обиделся или кончилась подписка' : result2 %></p>
     </div>
   </div>
 
